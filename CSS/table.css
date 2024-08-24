@@ -1,0 +1,55 @@
+header h1 {
+font-size: 27px;
+}
+
+table {
+  width: 80%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 20px;
+}
+
+table, th, td {
+border: 1px solid black;
+}
+
+th, td {
+  height: 40px;
+  width: 40px;
+  padding: 15px;
+}
+
+tr:hover {
+    background-color: rgb(117, 160, 117);
+    color: white;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgb(192, 219, 192);
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+  display: block;
+}
+
+footer p {
+   margin-top: 50px;
+}
+
+a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+background-color: rgb(117, 160, 117);
+color: white;
+border-radius: 6px;
+}

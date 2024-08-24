@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+line-height: 1.5;
+}
+
+
+nav ul {
+  list-style-type: none;
+  background-color: rgb(125, 13, 125);
+  padding: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  text-align: justify;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: rgb(248, 14, 248);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+header {
+  font-size: 15px;
+  font-weight: 50;
+  margin: 20px;
+}
+
+header h1 {
+  padding: 5px;
+}
+
+main {
+  display: grid;
+  background-color: rgb(211, 211, 217);
+  justify-content: center;
+}
+
+#about,
+#biography,
+#why,
+#goals {
+  background-color: white;
+  color: black;
+  margin: 20px 100px;
+  border-radius: 20px;
+}
+
+.displayAbout {
+  display: flex;
+}
+
+img {
+  width: 160px;
+  border-radius: 70%;
+  margin: 50px 0 0 50px;
+}
+
+main h2,
+p {
+  text-align: justify;
+  text-indent: 40px;
+  padding: 26px 40px 0 40px;
+}
+
+a {
+  /* text-align: center; */
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(125, 13, 125);
+}
+
+/* Responsive screens */
+@media (max-width: 600px) {
+    .displayAbout {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .displayAbout img {
+      margin: 0 0 20px 0;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
