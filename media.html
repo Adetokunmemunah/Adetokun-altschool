@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Page</title>
+  <link rel="stylesheet" href="./CSS/media.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <a id="top" href="#"></a>
+      <ul id="top">
+        <li><a href="#picture">Picture Media</a></li>
+        <li><a href="#video">Video Media</a></li>
+        <li><a href="#audio">Audio Media</a></li>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="table.html">AltSchool Africa Schools and Courses</a></li>
+        <li>
+          <a href="form.html"><strong>Apply Now</strong></a>
+        </li>
+      </ul>
+  </nav>
+  <header>
+    <h1>Media Page</h1>
+  </header>
+  <section id="picture">
+    <h2>My Profile Picture</h2>
+    <picture>
+      <!-- Different image sources for various screen sizes -->
+      <source media="(max-width: 599px)" srcset="./Assets/Images/C.jpg" />
+      <source media="(min-width: 600px)" srcset="./Assets/Images/B.jpg" />
+      <source media="(min-width: 1200px)" srcset="./Assets/Images/A.jpg" />
+      <!-- Fallback image for browsers that do not support <picture> -->
+      <img src="./Assets/Images/Adetokun.jpg" alt="Memunah's profile picture" />
+    </picture>
+    <p>
+      Hi There my name is Adetokun Memunah, an enthusiastic and aspiring
+      Front-end developer, content creator and a forest conservationist. I am
+      currently a student at AltSchool Africa, School of engineering
+      programme, Front-end track (with student ID:ALT/SOE/024/1281).
+    </p>
+    <p><a href="#top">Back to Top</a></p>
+
+  </section>
+  <section id="video">
+    <h3>A Short Video About Me</h3>
+    <video controls>
+      <source src="./Assets/video/A short reel about me.mp4" type="video/mp4" />
+      <source src="./Assets/video/A short reel about me.wmv" type="video/wmv" />
+    </video>
+    <p> The video above describes me, my personality and some of my hobbies. In addition to coding, i enjoy
+      exploring the intersection of design and technology, and i am always on
+      the lookout for opportunities to apply my skills in meaningful and
+      impactful ways. Outside of my tech pursuits, i enjoy nature walks,
+      outdoor picnics, vloging, creating video diaries, tree planting
+      exercise and so much more.</p>
+      <p><a href="#top">Back to Top</a></p>
+  </section>
+  <section id="audio">
+    <h2>Audio Introduction</h2>
+    <audio controls>
+      <source src="./Assets/audio/Taylor-Swift-22.mp3" type="audio/mp3" />
+      <source src="./Assets/audio/Taylor-Swift-22.ogg" type="audio/ogg" />
+    </audio>
+    <p><a href="#top">Back to Top</a></p>
+
+  </section>
+</body>
+
+</html>

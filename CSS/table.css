@@ -1,55 +1,97 @@
-header h1 {
-font-size: 27px;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  max-width: 12000px;
 }
 
+/* nav-bar styling */
+nav {
+  background-color: rgb(125, 13, 125);
+  padding: 16px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 14px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: rgb(125, 13, 125);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+header {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling the Table*/
 table {
-  width: 80%;
-  text-align: left;
+  width: 100%;
+  margin: 40px auto;
   border-collapse: collapse;
+  background-color: white;
+  min-width: 300px;
 }
 
 caption {
+  caption-side: top;
+  font-weight: bold;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
-table, th, td {
-border: 1px solid black;
+thead {
+  background-color: rgb(125, 13, 125);
+  color: whitesmoke;
 }
 
-th, td {
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
   height: 40px;
   width: 40px;
-  padding: 15px;
 }
 
-tr:hover {
-    background-color: rgb(117, 160, 117);
-    color: white;
-    cursor: pointer;
+th {
+  text-align: center;
 }
 
-td:hover {
-    background-color: rgb(192, 219, 192);
-    color: black;
-    cursor: pointer;
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-footer {
-  display: block;
+tbody tr:hover {
+  background-color: #e8f0fe;
 }
 
-footer p {
-   margin-top: 50px;
-}
-
-a {
-  padding: 14px 16px;
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-background-color: rgb(117, 160, 117);
-color: white;
-border-radius: 6px;
+/* Table responsiveness  */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+    min-width: 200px;
+  }
 }
